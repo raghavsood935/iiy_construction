@@ -1481,7 +1481,7 @@ class _HomePageState extends State<HomePage> {
               height: 20,
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 5),
+              padding: const EdgeInsets.symmetric(horizontal: 10),
               child: Container(
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -1512,9 +1512,7 @@ class _HomePageState extends State<HomePage> {
                   ],
                 ),
                 ),
-                  SizedBox(
-                    width: 65,
-                  ),
+                  Spacer(),
                   Image.asset(
                       "images/image.jpg",
                       height: 110,
@@ -1533,7 +1531,7 @@ class _HomePageState extends State<HomePage> {
                         child: Column(
                           children: [
                             Row(
-                            mainAxisAlignment: MainAxisAlignment.start,
+                            mainAxisAlignment: MainAxisAlignment.spaceAround,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
@@ -1544,19 +1542,24 @@ class _HomePageState extends State<HomePage> {
                                 color: Color(0xff121252),
                               ),
                               ),
-                              SizedBox(width: 130,),
+                              Spacer(),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                children: [
                               CircleAvatar(
                                 radius: 15,
                                 backgroundImage: AssetImage("images/demo.jpg"),
                               ),
-                             SizedBox(width: 24,),
+                             SizedBox(width: 10,),
                              Icon(Icons.more_vert)
                             ],
+                              )
+                                ],
                           ),
                             SizedBox(height: 15,),
                             IntrinsicHeight(
                               child: Row(
-                                mainAxisAlignment: MainAxisAlignment.start,
+                                mainAxisAlignment: MainAxisAlignment.spaceAround,
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Text("₹ 1,20,000 IN",
@@ -1576,7 +1579,7 @@ class _HomePageState extends State<HomePage> {
                                       color: Color(0xffd20d52),
                                     ),
                                   ),
-                                  SizedBox(width: 105,),
+                                  Spacer(),
                                   GestureDetector(
                                           onTap: (){
                                             Navigator.push(
@@ -1620,32 +1623,38 @@ class _HomePageState extends State<HomePage> {
                        child: Column(
                          children: [
                            Row(
-                             mainAxisAlignment: MainAxisAlignment.start,
+                             mainAxisAlignment: MainAxisAlignment.spaceAround,
                              crossAxisAlignment: CrossAxisAlignment.start,
                              children: [
-                               Text("$projectName",
+                               Text(
+                                 "$projectName",
                                  style: TextStyle(
                                    fontSize: 19,
                                    fontWeight: FontWeight.bold,
                                    color: Color(0xff121252),
                                  ),
                                ),
-                               SizedBox(width: 105,),
-                               CircleAvatar(
-                                 radius: 15,
-                                 backgroundImage: AssetImage("images/demo.jpg"),
-                               ),
-                               SizedBox(width: 24,),
-                               Icon(Icons.more_vert)
+                               Spacer(),
+                               Row(
+                                 mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                 children: [
+                                   CircleAvatar(
+                                     radius: 15,
+                                     backgroundImage: AssetImage("images/demo.jpg"),
+                                   ),
+                                   SizedBox(width: 10,),
+                                   Icon(Icons.more_vert)
+                                 ],
+                               )
                              ],
                            ),
                            SizedBox(height: 15,),
                            IntrinsicHeight(
                              child: Row(
-                               mainAxisAlignment: MainAxisAlignment.start,
+                               mainAxisAlignment: MainAxisAlignment.spaceAround,
                                crossAxisAlignment: CrossAxisAlignment.start,
                                children: [
-                                 Text("₹ 0 IN",
+                                 Text("₹ 1,20,000 IN",
                                    style: TextStyle(
                                      fontSize: 15,
                                      color: Color(0xff121252),
@@ -1656,15 +1665,20 @@ class _HomePageState extends State<HomePage> {
                                    endIndent: 5,
                                    color: Colors.black,
                                  ),
-                                 Text("₹ 0 OUT",
+                                 Text("₹ 14,842 OUT",
                                    style: TextStyle(
                                      fontSize: 15,
                                      color: Color(0xffd20d52),
                                    ),
                                  ),
-                                 SizedBox(width: 190,),
+                                 Spacer(),
                                  GestureDetector(
-                                   onTap: (){},
+                                   onTap: (){
+                                     Navigator.push(
+                                       context,
+                                       MaterialPageRoute(builder: (context) => Payments()),
+                                     );
+                                   },
                                    child: Icon(
                                      CupertinoIcons.arrow_right,
                                      color: Color(0xff121252),

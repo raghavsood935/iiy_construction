@@ -76,7 +76,7 @@ class _PaymentsState extends State<Payments> {
                         ),
                       ),
                     ),
-                    SizedBox(width: 20,),
+                    Spacer(),
                     SizedBox(
                       width: 160,
                       height: 45,
@@ -234,7 +234,7 @@ class _PaymentsState extends State<Payments> {
                               "Balance",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
-                                fontSize: 16,
+                                fontSize: 15,
                                 color: Color(0xff121252),
                               ),
                             ),
@@ -243,8 +243,7 @@ class _PaymentsState extends State<Payments> {
                               "+ 1,05,158",
                               style: TextStyle(
                                 color: Color(0xff121252),
-
-                                fontSize: 15,
+                                fontSize: 14,
 
                               ),
                             ),
@@ -262,7 +261,7 @@ class _PaymentsState extends State<Payments> {
                               "Total IN",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
-                                fontSize: 16,
+                                fontSize: 15,
                                 color: Color(0xff107760),
                               ),
                             ),
@@ -272,7 +271,7 @@ class _PaymentsState extends State<Payments> {
                               style: TextStyle(
                                 color: Color(0xff107760),
 
-                                fontSize: 15,
+                                fontSize: 14,
 
                               ),
                             ),
@@ -290,7 +289,7 @@ class _PaymentsState extends State<Payments> {
                               "Total OUT",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
-                                fontSize: 16,
+                                fontSize: 15,
                                 color: Color(0xffd30c52),
                               ),
                             ),
@@ -300,7 +299,7 @@ class _PaymentsState extends State<Payments> {
                               style: TextStyle(
                                 color: Color(0xffd30c52),
 
-                                fontSize: 15,
+                                fontSize: 14,
 
                               ),
                             ),
@@ -334,7 +333,7 @@ class _PaymentsState extends State<Payments> {
                       ),
                       SizedBox(width: 10,),
                       Text("Pending For Review",style: TextStyle(color: Color(0xff121252)),),
-                      SizedBox(width: 150,),
+                      Spacer(),
                       Icon(Icons.keyboard_arrow_down_sharp)
                     ],
                   ),
@@ -353,10 +352,11 @@ class _PaymentsState extends State<Payments> {
                       Icon(Icons.sort,size: 16,),
                       SizedBox(width: 20,),
                       Text("Filter my Entries",style: TextStyle(color: Color(0xff121252),fontSize: 13),),
-                      SizedBox(width: 100,),
+                      SizedBox(width: 75,),
                       Text("IN",style: TextStyle(color: Color(0xff121252),fontSize: 13),),
-                      SizedBox(width: 70,),
+                      Spacer(),
                       Text("OUT",style: TextStyle(color: Color(0xff121252),fontSize: 13),),
+                      SizedBox(width: 20,)
                     ],
                   ),
                 ),
@@ -378,33 +378,46 @@ class _PaymentsState extends State<Payments> {
                         padding: const EdgeInsets.all(10.0),
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text("9 Mar, from Sample User 1",
-                            style: TextStyle(fontSize: 12,color: Colors.grey.shade700),
+                            style: TextStyle(fontSize: 11,color: Colors.grey.shade700),
                             ),
                             SizedBox(height: 5,),
                             Text("1st  Running Payment",
-                              style: TextStyle(fontSize: 14,color: Color(0xff121252),fontWeight: FontWeight.bold),
+                              style: TextStyle(fontSize: 12,color: Color(0xff121252),fontWeight: FontWeight.bold),
                             )
                           ],
                         ),
                       ),
-                      SizedBox(width: 5,),
+                      Spacer(),
                       Icon(Icons.lock,size: 15,),
-                      SizedBox(width: 7,),
+                      Spacer(),
                       Container(
                         height: double.infinity,
-                        width: 90,
+                        width: 70,
                         color: Color(0xffeffff6),
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Text("Customer",style: TextStyle(fontSize: 12,color: Color(0xff117a6e),),),
-                            Text("₹ 20,000",style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,color: Color(0xff117a6e),),),
+                            Text("Customer",style: TextStyle(fontSize: 10,color: Color(0xff117a6e),),),
+                            Text("₹ 20,000",style: TextStyle(fontSize: 12,fontWeight: FontWeight.bold,color: Color(0xff117a6e),),),
                           ],
                         ),
-                      )
+                      ),
+                      Spacer(),
+                      Container(
+                        height: double.infinity,
+                        width: 70,
+                        color: Colors.white,
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text("",style: TextStyle(),),
+                            Text("",style: TextStyle(),),
+                          ],
+                        ),
+                      ),
                     ],
                   ),
                 ),
@@ -429,26 +442,26 @@ class _PaymentsState extends State<Payments> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text("7 Mar, to Sample User 2",
-                              style: TextStyle(fontSize: 12,color: Colors.grey.shade700),
+                              style: TextStyle(fontSize: 11,color: Colors.grey.shade700),
                             ),
                             SizedBox(height: 5,),
                             Text("Food For Site",
-                              style: TextStyle(fontSize: 14,color: Color(0xff121252),fontWeight: FontWeight.bold),
+                              style: TextStyle(fontSize: 12,color: Color(0xff121252),fontWeight: FontWeight.bold),
                             ),
                             SizedBox(height: 7,),
                             CircleAvatar(
-                              radius: 15,
+                              radius: 12,
                               backgroundImage: AssetImage("images/demo.jpg"),
                             )
                           ],
                         ),
                       ),
-                      SizedBox(width: 20,),
+                      Spacer(),
                       Icon(Icons.lock,size: 15,),
-                      SizedBox(width: 7,),
+                      SizedBox(width: 25,),
                       Container(
                         height: double.infinity,
-                        width: 90,
+                        width: 70,
                         color: Color(0xffeffff6),
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
@@ -456,6 +469,7 @@ class _PaymentsState extends State<Payments> {
                             ],
                         ),
                       ),
+                      Spacer(),
                       Container(
                         height: double.infinity,
                         width: 75,
@@ -463,9 +477,9 @@ class _PaymentsState extends State<Payments> {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Text("Food And\n   Travel",style: TextStyle(fontSize: 12,color: Color(0xffbf1952),),),
+                            Text("Food And\n   Travel",style: TextStyle(fontSize: 10,color: Color(0xffbf1952),),),
                             SizedBox(height: 5,),
-                            Text("₹ 404",style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,color: Color(0xffbf1952),),),
+                            Text("₹ 404",style: TextStyle(fontSize: 12,fontWeight: FontWeight.bold,color: Color(0xffbf1952),),),
                           ],
                         ),
                       )
@@ -493,11 +507,11 @@ class _PaymentsState extends State<Payments> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text("6 Mar, to Sample User 1",
-                              style: TextStyle(fontSize: 12,color: Colors.grey.shade700),
+                              style: TextStyle(fontSize: 11,color: Colors.grey.shade700),
                             ),
                             SizedBox(height: 5,),
                             Text("Paid to rohit worker",
-                              style: TextStyle(fontSize: 14,color: Color(0xff121252),fontWeight: FontWeight.bold),
+                              style: TextStyle(fontSize: 12,color: Color(0xff121252),fontWeight: FontWeight.bold),
                             ),
 
                           ],
@@ -505,10 +519,10 @@ class _PaymentsState extends State<Payments> {
                       ),
                       SizedBox(width: 20,),
                       Icon(Icons.lock,size: 15,),
-                      SizedBox(width: 7,),
+                      SizedBox(width: 10,),
                       Container(
                         height: double.infinity,
-                        width: 90,
+                        width: 70,
                         color: Color(0xffeffff6),
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
@@ -523,9 +537,9 @@ class _PaymentsState extends State<Payments> {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Text("Labour",style: TextStyle(fontSize: 12,color: Color(0xffbf1952),),),
+                            Text("Labour",style: TextStyle(fontSize: 10,color: Color(0xffbf1952),),),
                             SizedBox(height: 5,),
-                            Text("₹ 1550",style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,color: Color(0xffbf1952),),),
+                            Text("₹ 1550",style: TextStyle(fontSize: 12,fontWeight: FontWeight.bold,color: Color(0xffbf1952),),),
                           ],
                         ),
                       )
@@ -553,15 +567,15 @@ class _PaymentsState extends State<Payments> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text("5 Mar, to Sample User 2",
-                              style: TextStyle(fontSize: 12,color: Colors.grey.shade700),
+                              style: TextStyle(fontSize: 11,color: Colors.grey.shade700),
                             ),
                             SizedBox(height: 5,),
                             Text("20 bags of cement",
-                              style: TextStyle(fontSize: 14,color: Color(0xff121252),fontWeight: FontWeight.bold),
+                              style: TextStyle(fontSize: 12,color: Color(0xff121252),fontWeight: FontWeight.bold),
                             ),
                             SizedBox(height: 7,),
                             CircleAvatar(
-                              radius: 15,
+                              radius: 12,
                               backgroundImage: AssetImage("images/2.png"),
                             )
                           ],
@@ -569,10 +583,10 @@ class _PaymentsState extends State<Payments> {
                       ),
                       SizedBox(width: 18,),
                       Icon(Icons.lock,size: 15,),
-                      SizedBox(width: 7,),
+                      SizedBox(width: 10,),
                       Container(
                         height: double.infinity,
-                        width: 90,
+                        width: 70,
                         color: Color(0xffeffff6),
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
@@ -587,9 +601,9 @@ class _PaymentsState extends State<Payments> {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Text("Material",style: TextStyle(fontSize: 12,color: Color(0xffbf1952),),),
+                            Text("Material",style: TextStyle(fontSize: 10,color: Color(0xffbf1952),),),
                             SizedBox(height: 5,),
-                            Text("₹ 2400",style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,color: Color(0xffbf1952),),),
+                            Text("₹ 2400",style: TextStyle(fontSize: 12,fontWeight: FontWeight.bold,color: Color(0xffbf1952),),),
                           ],
                         ),
                       )
@@ -617,27 +631,27 @@ class _PaymentsState extends State<Payments> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text("4 Mar, from Sample User 2",
-                              style: TextStyle(fontSize: 12,color: Colors.grey.shade700),
+                              style: TextStyle(fontSize: 11,color: Colors.grey.shade700),
                             ),
                             SizedBox(height: 5,),
                             Text("Advance Received",
-                              style: TextStyle(fontSize: 14,color: Color(0xff121252),fontWeight: FontWeight.bold),
+                              style: TextStyle(fontSize: 12,color: Color(0xff121252),fontWeight: FontWeight.bold),
                             )
                           ],
                         ),
                       ),
                       SizedBox(width: 3,),
                       Icon(Icons.lock,size: 15,),
-                      SizedBox(width: 7,),
+                      SizedBox(width: 10,),
                       Container(
                         height: double.infinity,
-                        width: 90,
+                        width: 70,
                         color: Color(0xffeffff6),
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Text("Customer",style: TextStyle(fontSize: 12,color: Color(0xff117a6e),),),
-                            Text("₹ 1,00,000",style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,color: Color(0xff117a6e),),),
+                            Text("Customer",style: TextStyle(fontSize: 10,color: Color(0xff117a6e),),),
+                            Text("₹ 1,00,000",style: TextStyle(fontSize: 12,fontWeight: FontWeight.bold,color: Color(0xff117a6e),),),
                           ],
                         ),
                       )
@@ -665,15 +679,15 @@ class _PaymentsState extends State<Payments> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text("4 Mar, to Sample User 1",
-                              style: TextStyle(fontSize: 12,color: Colors.grey.shade700),
+                              style: TextStyle(fontSize: 11,color: Colors.grey.shade700),
                             ),
                             SizedBox(height: 5,),
                             Text("Plywood Payment",
-                              style: TextStyle(fontSize: 14,color: Color(0xff121252),fontWeight: FontWeight.bold),
+                              style: TextStyle(fontSize: 12,color: Color(0xff121252),fontWeight: FontWeight.bold),
                             ),
                             SizedBox(height: 7,),
                             CircleAvatar(
-                              radius: 15,
+                              radius: 12,
                               backgroundImage: AssetImage("images/2.png"),
                             )
                           ],
@@ -681,10 +695,10 @@ class _PaymentsState extends State<Payments> {
                       ),
                       SizedBox(width: 22,),
                       Icon(Icons.lock,size: 15,),
-                      SizedBox(width: 7,),
+                      SizedBox(width: 9,),
                       Container(
                         height: double.infinity,
-                        width: 90,
+                        width: 70,
                         color: Color(0xffeffff6),
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
@@ -699,9 +713,9 @@ class _PaymentsState extends State<Payments> {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Text("Material",style: TextStyle(fontSize: 12,color: Color(0xffbf1952),),),
+                            Text("Material",style: TextStyle(fontSize: 10,color: Color(0xffbf1952),),),
                             SizedBox(height: 5,),
-                            Text("₹ 10,488",style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,color: Color(0xffbf1952),),),
+                            Text("₹ 10,488",style: TextStyle(fontSize: 12,fontWeight: FontWeight.bold,color: Color(0xffbf1952),),),
                           ],
                         ),
                       )

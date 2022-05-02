@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         fontFamily: GoogleFonts.montserrat().fontFamily
       ),
-        home: HomePage(),
+        home: Payments(),
     );
   }
 }
