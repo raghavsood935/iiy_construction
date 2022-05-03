@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "852133454792",
+    "project_id": "iiy-construction",
+    "storage_bucket": "iiy-construction.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:852133454792:android:0135cc3ebe7385626016fd",
+        "android_client_info": {
+          "package_name": "com.iiy.construction"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "852133454792-dpokia2t60rdl1ronvk3vrgfi67pvakm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.iiy.construction",
+            "certificate_hash": "e0dd5c19864444bec994713c039d14a6b8279421"
+          }
+        },
+        {
+          "client_id": "852133454792-bo048ontjisl9pg56jaak6i7v2scstgm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3KYXukkI4D-W-oFW37uZ2yr_vpIyDOjA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "852133454792-bo048ontjisl9pg56jaak6i7v2scstgm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

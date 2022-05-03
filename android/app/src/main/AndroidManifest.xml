@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.flutter_iiy_construction">
+    package="com.iiy.construction">
    <application
-        android:label="flutter_iiy_construction"
+        android:label="IIY_04"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
